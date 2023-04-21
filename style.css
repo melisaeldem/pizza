@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  margin: 0px 80px;
+}
+header .icon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+header .icon i {
+  margin-left: 24px;
+}
+header .icon .active {
+  display: none;
+}
+header .icon .btn button {
+  margin-left: 30px;
+  padding: 10px 5px;
+  font-size: 12px;
+  border: none;
+  border-radius: 7px;
+  background-color: #4dab4b;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+header .icon .btn button:hover {
+  background-color: #5cb357;
+  transition: 0.3s;
+  cursor: pointer;
+}
+@media screen and (max-width: 490px) {
+  header .logo img {
+    width: 110px;
+  }
+  header .icon .btn button {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  header {
+    justify-content: space-between;
+    margin: 0;
+  }
+  header .icon .fa-magnifying-glass {
+    display: none;
+  }
+  header .icon .fa-basket-shopping {
+    display: none;
+  }
+  header .icon .active {
+    display: block;
+  }
+}
+/* main */
+main {
+  position: relative;
+  top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+main .text h1 {
+  font-size: 4vh;
+  letter-spacing: 1px;
+  line-height: 40px;
+}
+main .text p {
+  font-size: 1.5vh;
+  margin-top: 10px;
+}
+main .text button {
+  margin-top: 10px;
+  padding: 10px 5px;
+  border: none;
+  border-radius: 7px;
+  background-color: #4dab4b;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+}
+main .text button:hover {
+  background-color: #5cb357;
+  transition: 0.3s;
+  cursor: pointer;
+}
+main .main-img img {
+  width: 55vh;
+}
+.main-img {
+  animation: img 7s infinite;
+}
+@keyframes img {
+  50% {
+    transform: translateY(-6%);
+  }
+}
+@media screen and (max-width: 1000px) {
+  header {
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 680px) {
+  main .text {
+    text-align: center;
+  }
+  main .main-img img {
+    position: relative;
+    top: 40px;
+    width: 350px;
+  }
+}
+
+/* section */
+section {
+  position: relative;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+section .section-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+section .section-text h1 {
+  font-size: 4vh;
+  letter-spacing: 1px;
+}
+section .section-text p {
+  font-size: 14px;
+}
+section .box {
+  position: relative;
+  top: 40px;
+  margin: 0px 50px;
+  border-radius: 7px;
+  display: inline-block;
+  text-align: center;
+  padding: 12px;
+  cursor: pointer;
+}
+section .box:hover {
+  box-shadow: 10px -4px 1px 0px #4dab4b;
+  transition: 0.5s;
+}
+@media screen and (max-width: 785px) {
+  section {
+    position: relative;
+    top: 130px;
+  }
+  section .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 35px;
+  }
+}
+
+/* section 2 */
+
+.section2{
+    position: relative;
+    top: 250px;
+}
